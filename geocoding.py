@@ -6,7 +6,7 @@ gmaps = googlemaps.Client(key='Add Your Key here')
 
 string filename = 'INSERT FILENAME.txt'
 
-
+f = open("myfile.txt", "w")
 olympicsfile = open(filename, "r")
 
 for aline in olympicsfile:
@@ -14,9 +14,4 @@ for aline in olympicsfile:
     print(geocode_result, "\n")
 
 olympicsfile.close()
-
-
-
-
-# Geocoding an address
-geocode_result = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
+f.close()
