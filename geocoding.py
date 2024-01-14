@@ -1,9 +1,10 @@
 import os
 import googlemaps
 from datetime import datetime
+import pandas as pd
+from geopy.geocoders import Nominatim
 
 gmaps = googlemaps.Client(key='Add Your Key here')
-
 string filename = 'INSERT FILENAME.txt'
 
 f = open("myfile.txt", "w")
